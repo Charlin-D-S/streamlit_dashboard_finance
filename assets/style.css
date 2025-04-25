@@ -32,11 +32,11 @@
 
 /* Thèmes pour éléments custom */
 .kpi-box.light {
-    background-color: #f8f9fa;
+    background-color: #b9d2eb;
     color: #111;
 }
 
 .kpi-box.dark {
-    background-color: #1e1e1e;
-    color: #fff;
+    background-color: #464242;
+    color: #c60909;
 }

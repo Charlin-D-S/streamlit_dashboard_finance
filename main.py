@@ -20,15 +20,20 @@ import pandas as pd
 from datetime import datetime
 import plotly.express as px
 import locale
+from theme_manager import inject_base_css, inject_theme_css, format_number_fr
+
 #locale.setlocale(locale.LC_ALL, 'fr_FR.UTF-8')  # pour Linux/mac
 locale.setlocale(locale.LC_ALL, '')  # ← Pour Windows, essayer sans param
 
 st.set_page_config(page_title="Dashboard Financier", layout="wide")
-load_css("assets/style.css")
+
+# Charger le CSS global
+inject_base_css("assets/style.css")
+
+# Toggle et application du thème
 theme = st.toggle("🌗 Mode sombre", value=False)
 theme_class = "dark" if theme else "light"
-
-st.markdown(f"<body class='{theme_class}'>", unsafe_allow_html=True)
+inject_theme_css(theme_class)
 st.title("📊 Dashboard Financier - Données Réelles")
 
 # ----------------------------
