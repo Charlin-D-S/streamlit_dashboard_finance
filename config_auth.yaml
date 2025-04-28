@@ -1,0 +1,11 @@
+credentials:
+  usernames:
+    charlin:
+      email: djiokosad@gmail.com
+      name: Charlin DJIOKO
+      password: "$2a$12$jlZAX9j0h/1Zw..24ZwiyuLGJHHnsZzAd5BEoglXWlvttEIFzwqqm"
+cookie:
+  expiry_days: 1
+  key: "random_signature_key"
+  name: "dashboard_finance_login"
+
